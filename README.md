@@ -1,2 +1,2 @@
 # Baekjun-algorithm
-Practicing java algorithm
+Practicing Python algorithm
