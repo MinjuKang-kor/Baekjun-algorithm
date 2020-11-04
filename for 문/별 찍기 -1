@@ -1,0 +1,3 @@
+N = int(input())
+for i in range(N+1):
+	print('*'*i) //' '*i 는 ' ' 안에 문자를 i 번 출력한다는 뜻
