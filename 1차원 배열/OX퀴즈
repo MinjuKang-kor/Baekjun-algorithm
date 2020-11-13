@@ -1,0 +1,12 @@
+T = int(input()) #테스트 개수
+for i in range(T):
+    ox_sum = 0 #점수 합
+    sum = 0 #새로운 케이스 입력 시 점수 합계 리셋dyd
+    ox_result = list(input()) #OX 결과
+    for j in ox_result:
+        if j == 'O':#O는 숫자 아님 
+            ox_sum += 1
+            sum += ox_sum
+        else: 
+            ox_sum = 0
+    print(sum)

@@ -1,0 +1,6 @@
+N_list = []    
+for i in range(10):
+    n = int(input())
+    N_list.append(n % 42)
+N_list = set(N_list)
+print(len(N_list))

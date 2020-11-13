@@ -1,0 +1,11 @@
+import sys
+C = int(sys.stdin.readline()) #테스트 케이스
+for i in range(C):
+    N = list(map(int,sys.stdin.readline().split())) #[0]=학생 수,[1:]=학생 점수
+    avg = sum(N[1:])/N[0] #점수 평균
+    cnt = 0 #평균 이상 학생 수
+    for j in N[1:]:
+        if j > avg:
+            cnt += 1
+    rate = cnt/N[0]*100
+    print(f'{rate:.3f}%')
