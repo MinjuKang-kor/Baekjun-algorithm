@@ -1,0 +1,9 @@
+all_nums = set(range(1,10000)) # 숫자 1~10000까지의 집합
+remove = set() #셀프넘버가 아닌 숫자들의 집합
+for i in all_nums:
+    for j in str(i): #str = 숫자를 문자열로 분리
+        i += int(j) #j는 정수
+    remove.add(i) #.add는 set(집합)에 원소 추가할 때 사용 
+self_nums = all_nums - remove #셀프넘버에 대한 정의
+for num in sorted(self_nums): #sorted = 오름차순으로 정리
+    print(num)
