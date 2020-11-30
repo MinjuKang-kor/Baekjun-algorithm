@@ -1,0 +1,5 @@
+ca = ['c=','c-','dz=','d-','lj','nj','s=','z=']
+w = input()
+for i in ca:
+    w = w.replace(i,'x') #replace() 함수는 replace("찾을 값", "바꿀 값", [바꿀 횟수])의 형식을 가짐 // ca 리스트에서 받은 문자를 x로 치환
+print(len(w))

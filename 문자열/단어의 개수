@@ -1,0 +1,2 @@
+line = input().split() #split() 함수는 괄호 내 아무 값도 넣어주지 않으면 공백을 기준으로 문자열을 나눔
+print(len(line)) #len() 함수는 문자열 안의 문자 개수를 반환함

@@ -1,0 +1,8 @@
+dial = ['abc','def','ghi','jkl','mno','pqrs','tuv','wxyz']
+n = input().lower() #lower() 함수는 영문자를 소문자로 전환하는 역할
+sec = 0
+for i in range(len(n)):
+    for j in dial:
+        if n[i] in j:
+            sec += dial.index(j)+3
+print(sec)

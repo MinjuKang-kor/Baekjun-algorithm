@@ -1,0 +1,4 @@
+alphabet = list(range(97,123))
+S = input()
+for i in alphabet:
+    print(S.find(chr(i))) #find()는 문자열 중에서 특정 문자를 찾고 위치를 반환해 준다, 특정 문자가 문자열 내에 없을 경우에는 -1을 반환한다.
